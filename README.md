@@ -1,2 +1,2 @@
 # portfolio
-[My portfolio SPA built in React JS]
+[My portfolio SPA built in HTML/CSS/SASS]
