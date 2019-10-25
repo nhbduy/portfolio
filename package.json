@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js --open",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -36,6 +38,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "gh-pages": "^2.1.1",
     "jquery": "^3.4.1",
     "popper.js": "^1.16.0",
     "tilt.js": "^1.2.1"
