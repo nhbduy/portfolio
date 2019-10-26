@@ -1,3 +1,4 @@
+import initData from './js/data.js';
 import initTilt from './js/tilt';
 import initSr from './js/sr';
 import './style/main.scss';
@@ -17,5 +18,7 @@ $('a[href^="#"]').on('click', function(event) {
   }
 });
 
+
+initData();
 initSr();
 initTilt();
