@@ -1,7 +1,7 @@
 const data = {
   hero: {
     name: 'Duy NGUYEN',
-    title: 'I fall in love with Web Apps.'
+    title: 'I fall in love with Web Apps. 🌍'
   },
   about: {
     info:
@@ -11,7 +11,7 @@ const data = {
   },
   projects: {
     faceRecognition: {
-      name: 'Face Recognition App',
+      name: 'Face Recognition App 👨‍👩‍👧‍👦',
       sourceUrl: 'https://github.com/nhbduy/face-recognition',
       pageUrl: 'https://nhbduy.github.io/face-recognition'
     }
