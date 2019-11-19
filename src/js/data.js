@@ -14,6 +14,11 @@ const data = {
       name: 'Face Recognition App 👨‍👩‍👧‍👦',
       sourceUrl: 'https://github.com/nhbduy/face-recognition',
       pageUrl: 'https://nhbduy.github.io/face-recognition'
+    },
+    chatApplication: {
+      name: 'Real-time Chat App 📄',
+      sourceUrl: 'https://github.com/nhbduy/chat-application',
+      pageUrl: 'https://nhbduy-chat-application.herokuapp.com'
     }
   },
   contact: {
@@ -91,6 +96,7 @@ export default function() {
   renderHeroSection();
   renderAboutSection();
   renderProjectSection('faceRecognition');
+  renderProjectSection('chatApplication');
   renderContactSection();
   renderFooterSection();
 }
