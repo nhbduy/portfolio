@@ -10,15 +10,20 @@ const data = {
     cvUrl: 'http://bit.ly/cv-nhbduy-web-developer'
   },
   projects: {
+    capitalMogul: {
+      name: 'CapitalMogul Website 🏬',
+      sourceUrl: '',
+      pageUrl: 'https://capitalmogul.com'
+    },
+    chatApplication: {
+      name: 'Real-time Chat App 👨🏻‍💻👩🏻‍💻',
+      sourceUrl: 'https://github.com/nhbduy/chat-application',
+      pageUrl: 'https://nhbduy-chat-application.herokuapp.com'
+    },
     faceRecognition: {
       name: 'Face Recognition App 👨‍👩‍👧‍👦',
       sourceUrl: 'https://github.com/nhbduy/face-recognition',
       pageUrl: 'https://nhbduy.github.io/face-recognition'
-    },
-    chatApplication: {
-      name: 'Real-time Chat App 📄',
-      sourceUrl: 'https://github.com/nhbduy/chat-application',
-      pageUrl: 'https://nhbduy-chat-application.herokuapp.com'
     }
   },
   contact: {
@@ -95,8 +100,11 @@ export default function() {
 
   renderHeroSection();
   renderAboutSection();
-  renderProjectSection('faceRecognition');
+
+  renderProjectSection('capitalMogul');
   renderProjectSection('chatApplication');
+  renderProjectSection('faceRecognition');
+
   renderContactSection();
   renderFooterSection();
 }
