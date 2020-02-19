@@ -7,7 +7,7 @@ const data = {
     info:
       'As a Experienced Web Developer, I have many interests in web, mobile, network and the Internet of Things(IoT) field.I have always learned new skills and new technologies which are attractive to me, especially the Internet, the World Wide Web and the Multimedia technology.My professional experiences includes web development and some small scale mobile application development.',
     pageUrl: 'http://nhbduy.github.io/resume',
-    cvUrl: 'http://bit.ly/cv-nhbduy-web-developer'
+    cvUrl: 'http://bit.ly/cv-nhbduy-web-developer-feb2020'
   },
   projects: {
     capitalMogul: {
