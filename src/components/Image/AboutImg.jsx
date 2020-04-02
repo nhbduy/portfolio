@@ -30,15 +30,7 @@ const AboutImg = ({ filename, alt }) => (
       if (!image || !image.node.childImageSharp) return null;
 
       const imageFixed = image.node.childImageSharp.fixed;
-      return (
-        <Img
-          style={{ borderRadius: '50%' }}
-          className="img-fluid rounded shadow-lg"
-          height="auto"
-          alt={alt}
-          fixed={imageFixed}
-        />
-      );
+      return <Img className="rounded shadow-lg" height="auto" alt={alt} fixed={imageFixed} />;
     }}
   />
 );
