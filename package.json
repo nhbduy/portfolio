@@ -1,46 +1,78 @@
 {
-  "name": "simplefolio",
-  "version": "1.0.0",
-  "description": "A clean, beautiful and responsive portfolio template for Developers!",
-  "main": "index.js",
+  "name": "nhbduy-portfolio",
+  "private": true,
+  "description": "Duy's portfolio with Gatsby and React",
+  "version": "2.0.0",
+  "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.dev.js --open",
-    "build": "webpack --config webpack.prod.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "predeploy": "gatsby build",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "gatsby": "^2.19.5",
+    "gatsby-image": "^2.2.39",
+    "gatsby-plugin-manifest": "^2.2.38",
+    "gatsby-plugin-offline": "^3.0.32",
+    "gatsby-plugin-react-helmet": "^3.1.21",
+    "gatsby-plugin-sass": "^2.1.27",
+    "gatsby-plugin-sharp": "^2.4.0",
+    "gatsby-source-filesystem": "^2.1.46",
+    "gatsby-transformer-sharp": "^2.3.13",
+    "node-sass": "^4.13.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react-dom": "^16.12.0",
+    "react-github-btn": "^1.1.1",
+    "react-helmet": "^5.2.1",
+    "react-reveal": "^1.2.2",
+    "react-tilt": "^0.1.4",
+    "uuid": "^3.4.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.18.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "gh-pages": "^2.2.0",
+    "husky": "^4.2.1",
+    "lint-staged": "^10.0.2",
+    "prettier": "^1.19.1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nhbduy/portfolio"
   },
-  "keywords": [],
-  "author": "Jacobo Martinez",
-  "license": "ISC",
+  "homepage": "https://nhbduy.github.com/portfolio",
   "bugs": {
     "url": "https://github.com/nhbduy/portfolio/issues"
   },
-  "homepage": "https://nhbduy.github.com/portfolio",
-  "devDependencies": {
-    "clean-webpack-plugin": "^3.0.0",
-    "css-loader": "^3.2.0",
-    "file-loader": "^4.2.0",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
-    "mini-css-extract-plugin": "^0.8.0",
-    "node-sass": "^4.12.0",
-    "optimize-css-assets-webpack-plugin": "^5.0.3",
-    "sass-loader": "^8.0.0",
-    "style-loader": "^1.0.0",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.9",
-    "webpack-dev-server": "^3.8.2",
-    "webpack-merge": "^4.2.2"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
-  "dependencies": {
-    "bootstrap": "^4.3.1",
-    "gh-pages": "^2.1.1",
-    "jquery": "^3.4.1",
-    "popper.js": "^1.16.0",
-    "tilt.js": "^1.2.1"
+  "lint-staged": {
+    "*.+(js|jsx)": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.+(json|css|md)": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
