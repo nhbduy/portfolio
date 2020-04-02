@@ -1,3 +1,5 @@
+const round = require('lodash/round');
+
 module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
@@ -29,6 +31,23 @@ module.exports = {
         theme_color: `#02aab0`,
         display: `standalone`,
         icon: 'src/images/favicon.png',
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 1920,
+              wrapperStyle: fluidResult => `flex:${round(fluidResult.aspectRatio, 2)};`,
+            },
+          },
+        ],
       },
     },
   ],
