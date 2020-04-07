@@ -19,11 +19,11 @@ export const heroData = {
 export const aboutData = {
   img: 'avatar.png',
   paragraphOne:
-    'As a Experienced Web Developer, I have many interests in web, mobile, network and the Internet of Things(IoT) field.',
+    'I realize that the IT industry is immense and rapidly changes days by days. Hence, I need to adapt to it by learning new technologies and enhancing my skills every day.',
   paragraphTwo:
-    'I have always learned new skills and new technologies which are attractive to me, especially the Internet, the World Wide Web and the Multimedia technology.',
+    'As an experienced web developer, I have learned how to be responsible for not only myself but also my team. This has been an opportunity for me to become a dexterous developer, furthermore a better technical leader.',
   paragraphThree:
-    'My professional experiences includes web development and some small scale mobile application development.',
+    'With extensive experience in web development and some small scale mobile application development, I’m sure that I can meet the client’s needs beyond expectation.',
   page: 'http://nhbduy.github.io/resume',
   resume: 'http://bit.ly/cv-nhbduy-web-developer-feb2020', // if no resume, the button will not show up
 };
@@ -36,7 +36,7 @@ export const projectsData = [
     title: 'CapitalMogul Website 🏬',
     info:
       '[Freelance project] A landing-page website with dual-languages (EN-VN) for CapitalMogul Real Estate Technology Investment.',
-    info2: 'Tech Stack: WordPress CMS, Elementor, HTML5, CSS3, Bootstrap',
+    info2: '(WordPress CMS, Elementor, HTML5, CSS3, Bootstrap)',
     url: 'https://capitalmogul.com',
     repo: '', // if no repo, the button will not show up
   },
@@ -45,7 +45,7 @@ export const projectsData = [
     img: 'chat-app.png',
     title: 'Real-time Chat App 👨🏻‍💻👩🏻‍💻',
     info: 'A real-time chat application (group or P2P) with invitation link feature.',
-    info2: 'Tech Stack: ReactJS, NodeJS/ExpressJS, Socket.io, Knex.js, PostgreSQL, Heroku',
+    info2: '(ReactJS, NodeJS/ExpressJS, Socket.io, Knex.js, PostgreSQL, Heroku)',
     url: 'https://nhbduy-chat-application.herokuapp.com',
     repo: 'https://github.com/nhbduy/chat-application', // if no repo, the button will not show up
   },
@@ -55,7 +55,7 @@ export const projectsData = [
     title: 'Face Recognition App 👨‍👩‍👧‍👦',
     info:
       'A full-stack web application with the latest technologies, this app allows you to identify the detection of faces in any image supplied (using the artificial intelligence API named Clarifai)',
-    info2: 'Tech Stack: ReactJS / Redux, NodeJS/ExpressJS, Knex.js, PostgreSQL, Heroku',
+    info2: '(ReactJS/Redux, NodeJS/ExpressJS, Knex.js, PostgreSQL, Heroku)',
     url: 'https://nhbduy.github.io/face-recognition',
     repo: 'https://github.com/nhbduy/face-recognition', // if no repo, the button will not show up
   },
